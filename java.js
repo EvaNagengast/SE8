@@ -1,7 +1,7 @@
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   const element = document.getElementById("songTwo");
   const options = {
-    width: `40%`,
+    width: `80%`,
     height: `300`,
     uri: "spotify:track:5jzma6gCzYtKB1DbEwFZKH",
   };
