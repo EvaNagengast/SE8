@@ -1,7 +1,6 @@
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   const element = document.getElementById("songTwo");
   const options = {
-    
     width: `40%`,
     height: `300`,
     uri: "spotify:track:5jzma6gCzYtKB1DbEwFZKH",
@@ -11,6 +10,7 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
     document.querySelectorAll(".episode").forEach((episode) => {
       episode.addEventListener("click", () => {
         EmbedController.loadUri(episode.dataset.spotifyId);
+          EmbedController.play();
       });
     });
   };
@@ -18,6 +18,8 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
   IFrameAPI.createController(element, options, callback);
 };
 
-
-
-
+// 
+// 
+// 
+// 
+// 
