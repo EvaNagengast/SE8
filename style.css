@@ -38,11 +38,7 @@ body {
   text-align: center;
   margin: 10px 0 200px 0;
 }
-.hero h3 {
-  color: var(---basetextcolor);
-  font-size: 52px;
-  text-align: center;
-}
+
 .playButton {
   font-family: "Raleway", sans-serif;
   font-size: 17px;
@@ -56,39 +52,50 @@ body {
   margin: 0 65px 15px 65px;
   text-align: center;
 }
-/*  */
-
-.playlist {
-  margin-top: 30px;
+/* showcase */
+.start {
+  color: var(---basetextcolor);
+  font-size: 52px;
+  text-align: center;
+  margin: 65px;
 }
-
 .showcase {
   filter: grayscale(1) brightness(70%);
   margin-top: 80px;
 }
 
 /*  */
+
+.playlist {
+  margin-top: 30px;
+}
+.playlist h3 {
+  color: var(---basetextcolor);
+  font-size: 52px;
+  text-align: center;
+}
+
+/*  */
 footer {
   color: var(---basetextcolor);
-
-  background: linear-gradient(
-      172deg,
-      rgba(0, 0, 0, 0.85),
-      rgb(0, 0, 0, 0.85) 
-    ),
+  background: linear-gradient(172deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85)),
     url("/Media/tubeMap.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 40px;
   padding: 100px 0;
 }
+
 .wayout {
+  display: block;
+  width: 95px;
   border-top: 5px solid whitesmoke;
   border-right: 20px solid whitesmoke;
   border-bottom: 15px solid whitesmoke;
   border-left: 5px solid whitesmoke;
-  margin: 10px 0 0 30px;
+  margin: 60px auto;
   font-weight: 800;
   color: #ffeb36;
   background: linear-gradient(
@@ -100,7 +107,7 @@ footer {
   );
   text-decoration: none;
   padding: 8px 28px 8px 2px;
-  filter: brightness(70%);
+  filter: brightness(60%);
   border-radius: 2px;
 }
 .arrowimg {
@@ -121,14 +128,14 @@ font-family: 'Zeyada', cursive; */
     height: 500px;
   }
 
-  h1 {
+  .hero h1 {
     font-size: 100px;
   }
-  h2 {
+  .hero h2 {
     font-size: 42px;
     margin: 10px 0 100px 0;
   }
-  h3 {
+  .hero h3 {
     font-size: 32px;
   }
   .showcase {
@@ -142,14 +149,14 @@ font-family: 'Zeyada', cursive; */
     height: 420px;
   }
 
-  h1 {
+  .hero h1 {
     font-size: 70px;
   }
-  h2 {
+  .hero h2 {
     font-size: 30px;
     margin: 10px 0 50px 0;
   }
-  h3 {
+  .hero h3 {
     font-size: 25px;
   }
   .showcase {
