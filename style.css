@@ -1,5 +1,6 @@
 :root {
   ---basetextcolor: #f0dbb4;
+  ---darkbasetext: #51401c;
 }
 
 body {
@@ -53,19 +54,40 @@ body {
   text-align: center;
 }
 /* showcase */
+.song {
+  padding: 65px 0 0 0;
+}
 .start {
   color: var(---basetextcolor);
   font-size: 52px;
   text-align: center;
-  margin: 65px;
+  margin: 0;
 }
 .showcase {
   filter: grayscale(1) brightness(70%);
   margin-top: 80px;
 }
+/* Lyrics */
+.lyrics {
+ 
+  text-align: unset;
+}
+.lyrics p {   color: var(---darkbasetext);
+margin: 0 0 0 5px;
+  font-size: 22px;
+  font-style: italic;
+  font-size: 15px;
+}
 
+/* 'Bitter', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Dawning of a New Day', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Zeyada', cursive; */
 /*  */
-
+.underground{
+    height: 20px;
+}
 .playlist {
   margin-top: 30px;
 }
@@ -75,7 +97,7 @@ body {
   text-align: center;
 }
 
-/*  */
+/* FOOTER */
 footer {
   color: var(---basetextcolor);
   background: linear-gradient(172deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85)),
@@ -83,9 +105,14 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 0fr 2fr;
   grid-gap: 40px;
-  padding: 100px 0;
+  padding: 80px 0;
+}
+footer h4 {
+  font-size: 20px;
+  margin: 5px;
+  font-family: "Bitter", serif;
 }
 
 .wayout {
@@ -93,8 +120,8 @@ footer {
   width: 95px;
   border-top: 5px solid whitesmoke;
   border-right: 20px solid whitesmoke;
-  border-bottom: 15px solid whitesmoke;
-  border-left: 5px solid whitesmoke;
+  border-bottom: 15px ridge whitesmoke;
+  border-left: 5px groove whitesmoke;
   margin: 60px auto;
   font-weight: 800;
   color: #ffeb36;
@@ -116,13 +143,25 @@ footer {
   margin: 0;
   vertical-align: text-bottom;
 }
+.contactTwo {
+  display: none;
+}
+.gitHub {
+  color: var(---darkbasetext);
+  font-family: "Bitter", serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+.gitHub:hover {
+  color: var(---basetextcolor);
+}
 /* 'Bitter', serif;
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Dawning of a New Day', cursive;
 font-family: 'Raleway', sans-serif;
 font-family: 'Zeyada', cursive; */
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   .hero {
     padding-top: 200px;
     height: 500px;
@@ -140,6 +179,12 @@ font-family: 'Zeyada', cursive; */
   }
   .showcase {
     margin-top: 40px;
+  }
+
+  footer {
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding: 40px 0;
   }
 }
 
@@ -161,6 +206,21 @@ font-family: 'Zeyada', cursive; */
   }
   .showcase {
     margin-top: 20px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    padding: 25px 2px 0 10px;
+  }
+
+  .contactTwo {
+    display: block;
+  }
+  .contact {
+    display: none;
+  }
+  .wayout {
+    margin: 40px auto;
   }
 }
 
