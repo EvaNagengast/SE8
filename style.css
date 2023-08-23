@@ -2,6 +2,20 @@
   ---basetextcolor: #f0dbb4;
   ---darkbasetext: #0e0b04;
 }
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+/*  */
 
 body {
   background-color: black;
@@ -100,11 +114,7 @@ font-family: 'Zeyada', cursive; */
   text-align: center;
 }
 /* cards  */
-.grid-3col {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
+
 .card {
   width: 90%;
   background-color: #151310;
@@ -121,9 +131,11 @@ font-family: 'Zeyada', cursive; */
   color: #a5977e;
   margin: 0;
 }
-
+.cardHeader {
+  filter: sepia(40%);
+}
 .cardHeader img {
-  height: 40px;
+  height: 150px;
 }
 .cardFooter button {
   display: block;
