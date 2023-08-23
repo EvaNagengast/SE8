@@ -64,7 +64,8 @@ body {
   margin: 0;
 }
 .showcase {
-  filter: grayscale(1) brightness(70%);
+  filter: sepia(65%);
+  /* filter: grayscale(1) brightness(70%); */
   margin-top: 80px;
 }
 /* Lyrics */
@@ -98,27 +99,41 @@ font-family: 'Zeyada', cursive; */
   font-size: 52px;
   text-align: center;
 }
-/* north */
-.card {
-  width: 90%;
-  background-color:#412e0a;
-  color: var(---basetextcolor);
-  padding: 10px;
-  font-size: 14px;
-}
-.card h4{
-  color: var(---basetextcolor);
-    font-size: 16px;
-    margin: 10px 0 5px 0;
-}
-.card p{
-   color: #a5977e;
-    margin: 0;
-}
+/* cards  */
 .grid-3col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
+  grid-gap: 20px;
+}
+.card {
+  width: 90%;
+  background-color: #151310;
+  color: var(---basetextcolor);
+  padding: 20px;
+  font-size: 14px;
+}
+.card h4 {
+  color: var(---basetextcolor);
+  font-size: 16px;
+  margin: 10px 0 5px 0;
+}
+.card p {
+  color: #a5977e;
+  margin: 0;
+}
+
+.cardHeader img {
+  height: 40px;
+}
+.cardFooter button {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 15px;
+  background-color: black;
+  border: 2px solid var(---basetextcolor);
+  color: var(---basetextcolor);
+  padding: 8px 56px;
 }
 /*  */
 
