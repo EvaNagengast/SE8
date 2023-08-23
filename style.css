@@ -99,11 +99,28 @@ font-family: 'Zeyada', cursive; */
   text-align: center;
 }
 /* north */
-.north {
+.card {
   width: 90%;
-  background-color: rgb(227, 12, 12);
+  background-color:#412e0a;
+  color: var(---basetextcolor);
   padding: 10px;
+  font-size: 14px;
 }
+.card h4{
+  color: var(---basetextcolor);
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+.card p{
+   color: #a5977e;
+    margin: 0;
+}
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+/*  */
 
 /* FOOTER */
 footer {
