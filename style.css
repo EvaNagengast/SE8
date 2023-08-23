@@ -1,6 +1,6 @@
 :root {
   ---basetextcolor: #f0dbb4;
-  ---darkbasetext: #51401c;
+  ---darkbasetext: #0e0b04;
 }
 
 body {
@@ -69,14 +69,15 @@ body {
 }
 /* Lyrics */
 .lyrics {
- 
-  text-align: unset;
-}
-.lyrics p {   color: var(---darkbasetext);
-margin: 0 0 0 5px;
-  font-size: 22px;
+  color: var(---darkbasetext);
+  margin: 0 0 0 5px;
   font-style: italic;
-  font-size: 15px;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: right;
+  position: absolute;
+  left: 550px;
+  z-index: -1;
 }
 
 /* 'Bitter', serif;
@@ -84,11 +85,10 @@ font-family: 'Cormorant Garamond', serif;
 font-family: 'Dawning of a New Day', cursive;
 font-family: 'Raleway', sans-serif;
 font-family: 'Zeyada', cursive; */
-/*  */
-.underground{
+/* playlist  */
+.underground {
   padding: 0 30px;
-    vertical-align: middle;
-  
+  vertical-align: middle;
 }
 .playlist {
   margin-top: 30px;
@@ -97,6 +97,12 @@ font-family: 'Zeyada', cursive; */
   color: var(---basetextcolor);
   font-size: 52px;
   text-align: center;
+}
+/* north */
+.north {
+  width: 90%;
+  background-color: rgb(227, 12, 12);
+  padding: 10px;
 }
 
 /* FOOTER */
@@ -149,8 +155,8 @@ footer h4 {
   display: none;
 }
 .gitHub {
-  color: var(---darkbasetext);
-  font-family: "Bitter", serif;
+  color: #af976a;
+  font-size: large;
   font-weight: 600;
   text-decoration: none;
 }
