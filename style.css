@@ -134,9 +134,7 @@ font-family: 'Zeyada', cursive; */
 .cardHeader {
   filter: sepia(40%);
 }
-.cardHeader img {
-  height: 150px;
-}
+
 .cardFooter button {
   display: block;
   margin: 10px auto;
@@ -145,7 +143,9 @@ font-family: 'Zeyada', cursive; */
   background-color: black;
   border: 2px solid var(---basetextcolor);
   color: var(---basetextcolor);
-  padding: 8px 56px;
+  width: 75%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 /*  */
 
@@ -212,6 +212,16 @@ font-family: 'Cormorant Garamond', serif;
 font-family: 'Dawning of a New Day', cursive;
 font-family: 'Raleway', sans-serif;
 font-family: 'Zeyada', cursive; */
+
+@media (max-width: 900px) {
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .location {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   .hero {
