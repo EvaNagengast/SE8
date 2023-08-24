@@ -34,7 +34,7 @@ font-family: 'Zeyada', cursive; -->
     <header class="hero">
       <h1>London</h1>
       <h2>a musical journey</h2>
-      <a href="#start" class="">
+      <a href="#song" title="play London Calling by the Clash">
         <button
           class="episode playButton"
           data-spotify-id="spotify:track:5jzma6gCzYtKB1DbEwFZKH"
@@ -42,14 +42,16 @@ font-family: 'Zeyada', cursive; -->
           listen
         </button></a
       >
-      <a href="#playlist"><button class="playButton">explore</button> </a>
+      <a href="#playlist" title="go to song playlist"
+        ><button class="playButton">explore</button>
+      </a>
     </header>
     <!--  -->
 
     <!-- showcase song -->
     <main>
-      <section class="song">
-        <h3 class="mainHeadline">. get ready and mind the gap .</h3>
+      <section>
+        <h3 class="mainHeadline" id="song">. get ready and mind the gap .</h3>
         <div class="showcase" style="text-align: center">
           <div id="songTwo" class="displaysong"></div>
         </div>
@@ -57,12 +59,18 @@ font-family: 'Zeyada', cursive; -->
       <!-- happiness London -->
       <!--playlist  -->
       <section class="playlist" id="playlist">
-        <h3>
+        <h3 class="headlinePlaylist">
           <span class="underground"
-            ><img src="/Media/lines/picadilly.png" alt="" style="height: 35px"
+            ><img
+              src="/Media/lines/picadilly.png"
+              alt=""
+              class="headlineDecoration"
           /></span>
           Northwest To Northeast<span class="underground"
-            ><img src="/Media/lines/bakerloo.png" alt="" style="height: 35px"
+            ><img
+              src="/Media/lines/bakerloo.png"
+              alt=""
+              class="headlineDecoration"
           /></span>
         </h3>
         <!-- north -->
@@ -218,9 +226,12 @@ font-family: 'Zeyada', cursive; -->
             ><img
               src="/Media/lines/circle.png"
               alt=""
-              style="height: 35px" /></span
+              class="headlineDecoration" /></span
           >Central By The River<span class="underground"
-            ><img src="/Media/lines/district.png" alt="" style="height: 35px"
+            ><img
+              src="/Media/lines/district.png"
+              alt=""
+              class="headlineDecoration"
           /></span>
         </h3>
         <!--  -->
@@ -375,9 +386,12 @@ font-family: 'Zeyada', cursive; -->
             ><img
               src="/Media/lines/jubelee.png"
               alt=""
-              style="height: 35px" /></span
+              class="headlineDecoration" /></span
           >Down South-East<span class="underground"
-            ><img src="/Media/lines/overground.png" alt="" style="height: 35px"
+            ><img
+              src="/Media/lines/overground.png"
+              alt=""
+              class="headlineDecoration"
           /></span>
         </h3>
         <!--  -->
@@ -534,9 +548,12 @@ font-family: 'Zeyada', cursive; -->
             ><img
               src="/Media/lines/rail2.png"
               alt=""
-              style="height: 35px" /></span
+              class="headlineDecoration" /></span
           >Direction South-West<span class="underground"
-            ><img src="/Media/lines/vicline.png" alt="" style="height: 35px"
+            ><img
+              src="/Media/lines/vicline.png"
+              alt=""
+              class="headlineDecoration"
           /></span>
         </h3>
         <div class="grid-3col">
@@ -696,7 +713,17 @@ font-family: 'Zeyada', cursive; -->
       <!-- Venues -->
       <section class="venues">
         <h3>Iconic Venues</h3>
-        <h4>a roundtrip from south-east to northwest</h4>
+        <h4>
+          <span class="underground"
+            ><img
+              src="/Media/lines/tfl.png"
+              alt=""
+              class="headlineDecoration" /></span
+          >a roundtrip
+          <span class="underground"
+            ><img src="/Media/lines/tfl.png" alt="" class="headlineDecoration"
+          /></span>
+        </h4>
 
         <div class="tableResponsive">
           <table class="pictureTint">
@@ -769,14 +796,13 @@ font-family: 'Zeyada', cursive; -->
                       class="venueImg"
                   /></a>
                 </td>
-                <td>  <a href="https://www.eventimapollo.com/" target="_blank"
-                    > <img
-                    src="Media/places/Hammersmith_Apollo_03.jpg"
-                    alt=""
-                    class="venueImg"
-                  /></a
-                  >
-                 
+                <td>
+                  <a href="https://www.eventimapollo.com/" target="_blank">
+                    <img
+                      src="Media/places/Hammersmith_Apollo_03.jpg"
+                      alt=""
+                      class="venueImg"
+                  /></a>
                 </td>
               </tr>
             </tbody>
