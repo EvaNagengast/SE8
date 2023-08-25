@@ -191,6 +191,9 @@ footer {
   filter: brightness(60%);
   border-radius: 2px;
 }
+.wayout:hover{
+   filter: brightness(100%);
+}
 .arrowimg {
   height: 18px;
   padding: 0;

@@ -1,0 +1,158 @@
+html {
+  background: linear-gradient(
+      172deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgb(0, 0, 0, 0.6) 100%
+    ),
+    url("/Media/subway.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  color: #f0dbb4;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+/* head */
+
+h1 {
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  font-family: "Bitter", serif;
+  margin: 0;
+}
+a {
+  color: #fce8c2;
+  text-decoration: none;
+  font-weight: 700;
+}
+a:hover {
+  color: rgb(255, 246, 235);
+}
+.wayout {
+  display: block;
+  width: 95px;
+  border-top: 5px solid whitesmoke;
+  border-right: 20px solid whitesmoke;
+  border-bottom: 15px ridge whitesmoke;
+  border-left: 5px groove whitesmoke;
+  margin: 20px auto;
+  font-weight: 800;
+  color: #ffeb36;
+  background: linear-gradient(
+    344deg,
+    rgb(10, 0, 5) 0%,
+    rgb(15, 15, 15) 16%,
+    rgb(39, 39, 39) 40%,
+    rgb(2, 0, 8) 100%
+  );
+  text-decoration: none;
+  padding: 8px 28px 8px 2px;
+  filter: brightness(60%);
+  border-radius: 2px;
+}
+.wayout:hover {
+  filter: brightness(100%);
+  color: #ffeb36;
+}
+.arrowimg {
+  height: 18px;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-bottom;
+}
+/* grid */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 8fr 10fr;
+}
+/* grid1 */
+.profilePic {
+  height: 150px;
+  border-radius: 50%;
+  rotate: -60deg;
+  filter: brightness(90%);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+}
+.gridContent1 {
+  display: flex;
+  float: right;
+  margin: 30px;
+}
+/* grid2 */
+
+.gridContent2 {
+  position: relative;
+  display: flex;
+  float: left;
+  margin: 30px;
+}
+.tflTicket {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+  margin: 0 0 0 0;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 120%;
+  transition: top 0.3s ease; /* Smooth animation transition */
+}
+
+/* footer */
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.514);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 60px;
+  }
+  .profilePic {
+    height: 120px;
+  }
+
+  .contactInfo {
+    font-size: 13px;
+  }
+
+  .grid-2col {
+    grid-template-columns: 9fr 12fr;
+  }
+  .footerInfo {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+  .profilePic {
+    height: 100px;
+  }
+
+  .contactInfo {
+    font-size: 10px;
+  }
+
+  .grid-2col {
+    grid-template-columns: 9fr 12fr;
+  }
+  .gridContent2, .gridContent1{margin: 10px;}
+  .footerInfo {
+    font-size: 10px;
+  }
+}

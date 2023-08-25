@@ -23,17 +23,15 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
 //
 //
 //
+function moveTicket() {
+  let contactInfo = document.querySelector("#tflTicket");
 
-function moveticket() {
-{let ticketimage = document.querySelector("#tflTicket");
-  ticketimage.classList.toggle("active");
+  if (contactInfo.style.top === "0px" || contactInfo.style.top === "") {
+    contactInfo.style.top = "100%"; // Move the contactInfo downward
+  } else {
+    contactInfo.style.top = "0"; // Bring the contactInfo back to its original position
+  }
 }
-}
 
 
-
-let ticket = document.querySelector("#tflTicket");
-let container = document.querySelector("#ticket");
-container.addEventListener("click", moveticket);
-
-
+document.querySelector("#ticket").addEventListener("click", moveTicket);
