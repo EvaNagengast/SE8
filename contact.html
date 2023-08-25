@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page is a tribute to London and its music and musicians. It was built to be responsive with media queries and embeds. "
+    />
+    <title>
+      Eva Nagengast - Front-End Devoloper - passionate about music, public
+      transport. Contact me
+    </title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/Media/lines/tflBackground.png"
+      type="image/x-icon"
+    />
+    <!-- Fonts -->
+    <!-- font-family: 'Bitter', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Dawning of a New Day', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Zeyada', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dawning+of+a+New+Day&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- css -->
+    <style>
+      html {
+        background: linear-gradient(
+            172deg,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgb(0, 0, 0, 0.6) 100%
+          ),
+          url("/Media/subway.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      body {
+        color: #f0dbb4;
+        text-align: center;
+      }
+      .wayout {
+        display: block;
+        width: 95px;
+        border-top: 5px solid whitesmoke;
+        border-right: 20px solid whitesmoke;
+        border-bottom: 15px ridge whitesmoke;
+        border-left: 5px groove whitesmoke;
+        margin: 20px auto;
+        font-weight: 800;
+        color: #ffeb36;
+        background: linear-gradient(
+          344deg,
+          rgb(10, 0, 5) 0%,
+          rgb(15, 15, 15) 16%,
+          rgb(39, 39, 39) 40%,
+          rgb(2, 0, 8) 100%
+        );
+        text-decoration: none;
+        padding: 8px 28px 8px 2px;
+        filter: brightness(60%);
+        border-radius: 2px;
+      }
+
+      .arrowimg {
+        height: 18px;
+        padding: 0;
+        margin: 0;
+        vertical-align: text-bottom;
+      }
+      h1 {
+        font-size: 80px;
+        font-weight: 800;
+        letter-spacing: 5px;
+        font-family: "Bitter", serif;
+        margin: 0;
+      }
+      .aboutMe img {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0);
+      }
+      .profilePic img {
+        height: 250px;
+        border-radius: 50%;
+        rotate: -60deg;
+        filter: brightness(90%);
+      }
+      .aboutMe {
+        display: grid;
+        grid-template-columns: 7fr 9fr;
+        justify-content: center;
+        margin: 0px 160px;
+      }
+
+      .gridItems {
+        display: flex;
+        margin: 0 30px;
+      }
+
+      .gridItems.profilePic {
+        justify-content: end;
+      }
+      .tflTicket {
+        margin: 0 5px 10px 5px;
+        transition: margin 500ms ease-in;
+      }
+      .tflTicket.active {
+        margin: 280px 5px 10px -55px;
+      }
+
+      .material-symbols-sharp {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="/" class="wayout" title="contact me">
+        <img
+          src="Media/arrow.png"
+          alt="underground way out sign"
+          class="arrowimg"
+        />
+        Way out</a
+      >
+    </div>
+
+    <h1>Contact me</h1>
+    <div class="aboutMe">
+      <div class="gridItems profilePic"><img src="Media/me.jpg" alt="" /></div>
+
+      <div class="gridItems ticket" id="ticket">
+        <div class="contact"></div>
+        <img
+          src="Media/ticket.png"
+          alt="tfl ticket"
+          class="tflTicket"
+          id="tflTicket"
+        />
+      </div>
+    </div>
+    <div class="contact"></div>
+    <!-- js -->
+    <script src="java.js"></script>
+  </body>
+</html>
