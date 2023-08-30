@@ -69,6 +69,11 @@ button {
   border: 3px solid var(---basetextcolor);
   font-size: 17px;
 }
+button:hover {
+  color: black;
+  background-color: var(---basetextcolor);
+  border: 3px solid black;
+}
 
 /*  */
 .hero {
@@ -152,7 +157,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 2fr 0fr 2fr; 
+  grid-template-columns: 1fr 2fr 0fr 2fr;
   grid-gap: 40px;
   padding: 55px 0 40px 0;
 }
@@ -191,8 +196,8 @@ footer {
   filter: brightness(60%);
   border-radius: 2px;
 }
-.wayout:hover{
-   filter: brightness(100%);
+.wayout:hover {
+  filter: brightness(100%);
 }
 .arrowimg {
   height: 18px;
@@ -328,7 +333,6 @@ footer {
     margin: 40px auto;
   }
 }
-
 
 @media (max-width: 480px) {
   .grid-3col {
